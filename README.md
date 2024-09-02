@@ -1,2 +1,2 @@
 # university-projects
- projetinhos de universidade
+ Projetinhos de universidade
