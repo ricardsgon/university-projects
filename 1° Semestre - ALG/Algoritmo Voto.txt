@@ -1,0 +1,16 @@
+Algoritmo: Voto
+	inteiro idade
+	ler(idade)
+	
+	se (idade < 16)
+		escrever("Voto não permitido")
+	senao se (idade > 17 E idade < 71)
+		escrever("Voto obrigatório")
+	senão 
+		escrever("Voto Facultativo")
+		
+			fim
+		fim
+	fim
+		 
+		

@@ -1,0 +1,12 @@
+Algoritmo média
+real notas[4]
+inteiro I
+real soma = 0.0
+para I = 0 até 2 faça
+	escrever("Nota: ", I + 1)
+	ler(Notas[I]
+	soma = soma + notas[I]
+fim para
+	notas[3] = soma/4
+	escrever("Média: ", notas[4]
+finm
