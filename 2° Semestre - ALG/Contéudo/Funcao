@@ -1,18 +1,21 @@
 #include <stdio.h>
+
 int par(int x)
 {
     return ((x % 2) == 0);
 }
-void soma(int x)
+void soma(int *x, int *y)
 {
-    x = x + x * 2;
+    int temp = *x;
+    *x = *x - *y;
+    *y = temp - *y;
 }
 int main()
 {
-    int z;
-    scanf("%d", &z);
-    printf("%d", par(z));
-    soma(z);
-    printf("%d", z);
+    int x, y;
+    scanf("%d %d", &x, &y);
+    printf("%d", par(x));
+    soma(&x,&y);
+    printf("Resultado Soma e Subtração: %d %d", x, y);
     return 0;
 }
