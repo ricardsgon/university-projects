@@ -1,3 +1,4 @@
+
 nome = input("Olá! Qual é o seu nome?")
 print(f"Prazer em te conhecer, {nome}!")
 idade_input = input("Quantos anos você tem?")
