@@ -1,3 +1,4 @@
+/*Contar a quantidade de vogais maisculas e minusculas.*/
 #include <stdio.h>
 #include <locale.h>
 
