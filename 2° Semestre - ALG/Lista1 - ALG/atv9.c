@@ -1,24 +1,26 @@
 /*Escreva uma função que receba, por parâmetro, dois valores X e Z e calcule e retorne
-X^Z. (sem utilizar funções ou operadores de potencia prontos).*/
+X^z. (sem utilizar funções ou operadores de potencia prontos).*/
+
 #include <stdio.h>
-#include <locale.h>
 #include <math.h>
+#include <locale.h>
+
 int calc(int x, int y);
-
-int main(){
-    int c, d;
-    setlocale(LC_ALL, "Portuguese_Brazil");
-    printf("Digite sua base: ");
-    scanf("%d", &c);
-    printf("Digite seu expoente: ");
-    scanf("%d", &d);
-    int water = calc(c, d);
+int main()
+{
+    int x, y;
+    setlocale(LC_ALL, "Portuguese");
+    printf("Insira a base: ");
+    scanf("%d", &x);
+    printf("Insira seu expoente: ");
+    scanf("%d", &y);
+    int water = calc(x, y);
     printf("Seu resultado vai ser: %d", water);
-
 }
 
-int calc(int x, int y){
+int calc(int x, int y)
+{
     int base = x;
     int expoente = y;
-    return pow(base, expoente); 
+    return pow(base, expoente);
 }
