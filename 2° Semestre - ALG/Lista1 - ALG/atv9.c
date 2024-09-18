@@ -8,14 +8,13 @@ X^z. (sem utilizar funções ou operadores de potencia prontos).*/
 int calc(int x, int y);
 int main()
 {
-    int x, y;
     setlocale(LC_ALL, "Portuguese");
+    int x, y;
     printf("Insira a base: ");
     scanf("%d", &x);
     printf("Insira seu expoente: ");
     scanf("%d", &y);
-    int water = calc(x, y);
-    printf("Seu resultado vai ser: %d", water);
+    printf("Seu resultado vai ser: %d", calc(x, y));
 }
 
 int calc(int x, int y)

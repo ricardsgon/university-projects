@@ -9,10 +9,7 @@ int main(){
     int c;
     printf("Insira um número: ");
     scanf("%d", &c);
-    int fact = factorial(c);
-    printf("Seu fatorial é: %d", fact);
-
-
+    printf("Seu fatorial é: %d", factorial(c));
 }
 
 int factorial(int x){

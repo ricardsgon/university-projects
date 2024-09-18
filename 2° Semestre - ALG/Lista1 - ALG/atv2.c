@@ -9,50 +9,22 @@ int main()
 {
     setlocale(LC_ALL, "Portuguese_Brazil");
     int c;
+    do{
     printf("Digite o número do mês: ");
     scanf("%d", &c);
-    func(c);
+    if (c >= 1 && c <= 12)
+    {
+        func(c);    
+    }
+    else
+    {
+        printf("Número inválido. Tente novamente.\n\n");
+    }
+    }while(c <= 0 || c > 12);
 }
 
 void func(int x)
 {
-    switch (x)
-    {
-    case 1:
-        printf("Janeiro");
-        break;
-    case 2:
-        printf("Fevereiro");
-        break;
-    case 3:
-        printf("Março");
-        break;
-    case 4:
-        printf("Abril");
-        break;
-    case 5: 
-        printf("Maio");
-        break;
-    case 6:
-        printf("Junho");
-        break;
-    case 7:
-        printf("Julho");
-        break;
-    case 8:
-        printf("Agosto");
-        break;
-    case 9:
-        printf("Setembro");
-        break;
-    case 10:
-        printf("Outubro");
-        break;
-    case 11:
-        printf("Novembro");
-        break;
-    case 12:
-        printf("Dezembro");
-        break;
-    }
+    const char *meses[] = {"Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"};
+    printf("%s\n", meses[x - 1]);
 }

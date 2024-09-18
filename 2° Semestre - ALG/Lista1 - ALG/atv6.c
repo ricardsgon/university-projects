@@ -8,18 +8,17 @@ De 9.0 a 10.0- A*/
 #include <stdio.h>
 #include <locale.h>
 
-int calc(float x);
+char calc(float x);
 int main(){
     setlocale(LC_ALL, "Portuguese_Brazil");
     float a;
     printf("Insira a média final do aluno: ");
     scanf("%f", &a);
-    int water = calc(a);
-    printf("O conceito do aluno foi: %c", water);
+    printf("O conceito do aluno foi: %c\n", calc(a));
 
 }
 
-int calc(float x){
+char calc(float x){
     char conc;
     if(0.0 < x && x <= 4.9){
         conc = 'D';
