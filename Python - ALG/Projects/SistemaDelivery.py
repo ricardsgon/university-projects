@@ -1,5 +1,5 @@
 comida_indiana = ["Curry", "Chutney", "Samosa", "Naan"]
-comida_italiana = ["Pasta à Bolonhesa", "Pizza de Pepperoni", "Pizza Margherita", "Lasanha"]
+comida_italiana = ["Pasta" , "Bolonhesa", "Pizza de Pepperoni", "Pizza Margherita", "Lasanha"]
 
 
 def encontrar_refeicao(nome, menu):
