@@ -9,10 +9,10 @@ void vogals(char vogal[]);
 int main()
 {
     setlocale(LC_ALL, "Portuguese");
-    char string[MAX_VG];
+    char frase[MAX_VG];
     printf("Insira uma frase: ");
-    fgets(string, MAX_VG, stdin);
-    vogals(string);
+    fgets(frase, MAX_VG, stdin);
+    vogals(frase);
     return 0;
 }
 
